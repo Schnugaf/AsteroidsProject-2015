@@ -14,7 +14,6 @@ public class ScreenLoop : MonoBehaviour {
     {
 
         gameCamera = Camera.main;
-
     }
 
     // Update is called once per frame
