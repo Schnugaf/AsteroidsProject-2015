@@ -13,8 +13,6 @@ GameObject:
   - 50: {fileID: 5027444}
   - 58: {fileID: 5827444}
   - 114: {fileID: 11408510}
-  - 114: {fileID: 11460884}
-  - 114: {fileID: 11494338}
   m_Layer: 0
   m_Name: Astroid1
   m_TagString: Astroid
@@ -84,30 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   rotationSpeed: 13
---- !u!114 &11460884
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc8ad7c8d63902b41909fa5571ba2ff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11494338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80fe97bdf19b2ac4bb10105e22c52156, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  comment: (Usage comment)
-  showLogMessages: 0
+  Splash: {fileID: 0}
 --- !u!212 &21227444
 SpriteRenderer:
   m_ObjectHideFlags: 1

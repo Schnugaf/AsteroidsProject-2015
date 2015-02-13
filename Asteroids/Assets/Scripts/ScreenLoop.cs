@@ -36,24 +36,24 @@ public class ScreenLoop : MonoBehaviour {
         #region If Statements for Object Position
         //If setninger som ser etter hvilken vegg objektet treffer
 
-        if (transform.position.x > camRecTopRight.x)
+        if (transform.position.x > camRecTopRight.x + 10)
         {
             pos.x = camRecBottomLeft.x + 0.1f;
         }
 
 
-        if (transform.position.x < camRecBottomLeft.x)
+        if (transform.position.x < camRecBottomLeft.x - 10)
         {
             pos.x = camRecTopRight.x - 0.1f;
         }
 
-        if (transform.position.y > camRecTopRight.y)
+        if (transform.position.y > camRecTopRight.y + 10)
         {
             pos.y = camRecBottomLeft.y + 0.1f;
         }
 
 
-        if (transform.position.y < camRecBottomLeft.y)
+        if (transform.position.y < camRecBottomLeft.y - 10)
         {
             pos.y = camRecTopRight.y - 0.1f;
         }
