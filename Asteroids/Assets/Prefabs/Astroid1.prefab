@@ -12,6 +12,8 @@ GameObject:
   - 114: {fileID: 11427444}
   - 50: {fileID: 5027444}
   - 58: {fileID: 5827444}
+  - 114: {fileID: 11408510}
+  - 114: {fileID: 11460884}
   - 114: {fileID: 11494338}
   m_Layer: 0
   m_Name: Astroid1
@@ -58,6 +60,17 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: 1
   m_Center: {x: 0, y: 0}
+--- !u!114 &11408510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cbca9c5510598449453246d90c07b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11427444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,11 +82,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ced35d0e184d499599f612d6aae2e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 1
   rotationSpeed: 13
---- !u!114 &11494338
+--- !u!114 &11460884
 MonoBehaviour:
   m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8ad7c8d63902b41909fa5571ba2ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11494338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127444}
