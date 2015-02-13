@@ -5,6 +5,7 @@ public class Astroid : MonoBehaviour {
 
 	public float speed = 15f;
 	public float rotationSpeed = 3f;
+    public Transform Splash;
 
 
 	// Use this for initialization
@@ -43,7 +44,7 @@ public class Astroid : MonoBehaviour {
                         else
                        */
                             Destroy(this.gameObject);
-                            GameObject go = (GameObject)Instantiate(Resources.Load("SplashPlaceHolder")), new Vector2(this.transform.position.x, this.transform.position.y);
+                            //GameObject go = (GameObject)Instantiate(Resources.Load("SplashPlaceHolder"));
                     }
                 }
             }
