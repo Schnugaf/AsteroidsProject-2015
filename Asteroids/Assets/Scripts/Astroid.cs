@@ -19,6 +19,7 @@ public class Astroid : MonoBehaviour {
 	void Update () {
         int fingerCount = 0;
 
+
         foreach (Touch touch in Input.touches)
         {
             if (touch.phase != TouchPhase.Ended || touch.phase != TouchPhase.Canceled)
@@ -33,15 +34,16 @@ public class Astroid : MonoBehaviour {
                     if (collider2D == Physics2D.OverlapPoint(touchPos))
                     {
 
-                        if (transform.localScale.x == 1)
+                      /*  if (transform.localScale.x == 1)
                         {
                             transform.localScale -= new Vector3(0.5f, 0.5f, 0.5f);
                             Instantiate(this, new Vector2(this.transform.position.x + 1.3f, this.transform.position.y + 0.2f),
                                         this.transform.rotation);
                         }
                         else
+                       */
                             Destroy(this.gameObject);
-
+                            GameObject go = (GameObject)Instantiate(Resources.Load("SplashPlaceHolder")), new Vector2(this.transform.position.x, this.transform.position.y);
                     }
                 }
             }

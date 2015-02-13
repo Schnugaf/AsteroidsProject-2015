@@ -50,7 +50,8 @@
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\ScreenLoop.cs" />
-     <Compile Include="Assets\Scripts\ScreenSplash.cs" />
+     <Compile Include="Assets\Scripts\SpawnScript.cs" />
+     <Compile Include="Assets\SplashRub.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
