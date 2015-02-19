@@ -1,0 +1,27 @@
+
+Bact_Green_Pigg.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Lag 2 copy
+  rotate: false
+  xy: 2, 2
+  size: 168, 198
+  orig: 168, 198
+  offset: 0, 0
+  index: -1
+Lag 3 copy
+  rotate: false
+  xy: 172, 23
+  size: 168, 177
+  orig: 168, 177
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 342, 22
+  size: 150, 178
+  orig: 150, 178
+  offset: 0, 0
+  index: -1
