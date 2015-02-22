@@ -1,0 +1,27 @@
+
+Bact_Blue_Ball_Splash.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ecoli
+  rotate: false
+  xy: 721, 35
+  size: 297, 303
+  orig: 297, 303
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 376, 18
+  size: 320, 343
+  orig: 320, 343
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 2, 2
+  size: 372, 336
+  orig: 372, 336
+  offset: 0, 0
+  index: -1
