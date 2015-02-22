@@ -27,7 +27,7 @@ public class Astroid : MonoBehaviour {
             {
                 fingerCount++;
 
-                if (fingerCount == 1 && touch.phase == TouchPhase.Began)
+                if (fingerCount == 1 && touch.phase != TouchPhase.Began)
                 {
                     Debug.Log("touch registered");
                     Vector3 wp = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
@@ -44,7 +44,8 @@ public class Astroid : MonoBehaviour {
                         else
                        */
                             Destroy(this.gameObject);
-                            //GameObject go = (GameObject)Instantiate(Resources.Load("SplashPlaceHolder"));
+                            GameObject go = (GameObject)Instantiate(Resources.Load("SplashPlaceHolder"));
+
                     }
                 }
             }
