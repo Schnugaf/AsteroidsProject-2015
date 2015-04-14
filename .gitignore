@@ -19,7 +19,7 @@ sysinfo.txt
 /*.user
 /*.unityproj
 /*.booproj
-
+ 
 # ============ #
 # OS generated #
 # ============ #
@@ -30,10 +30,3 @@ sysinfo.txt
 Icon?
 ehthumbs.db
 [Tt]humbs.db
-*.ods#
-*.odt#
-Asteroids/Assembly-CSharp.csproj
-*.csproj
-Asteroids/Assembly-CSharp-Editor-vs.csproj
-*.csproj
-Asteroids/Asteroids-csharp.sln
