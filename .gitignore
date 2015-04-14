@@ -33,3 +33,7 @@ ehthumbs.db
 *.ods#
 *.odt#
 Asteroids/Assembly-CSharp.csproj
+*.csproj
+Asteroids/Assembly-CSharp-Editor-vs.csproj
+*.csproj
+Asteroids/Asteroids-csharp.sln

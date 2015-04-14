@@ -69,7 +69,7 @@ public class PlayerMove : MonoBehaviour
 
 		if (deltaRotation < -0.1 || deltaRotation > 0.1)
 		{
-			rigidbody2D.AddTorque(deltaRotation*rotationSpeed*Time.deltaTime);
+			GetComponent<Rigidbody2D>().AddTorque(deltaRotation*rotationSpeed*Time.deltaTime);
 		}
 
 		//if (Input.GetAxis("Vertical")> 0)  
@@ -81,7 +81,7 @@ public class PlayerMove : MonoBehaviour
 		{
 			if (touch.position.x < touchWidth)
 			{
-				rigidbody2D.AddForce(new Vector2(Mathf.Cos(Deg2Rad(transform.eulerAngles.z))*speed*Time.deltaTime,
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(Mathf.Cos(Deg2Rad(transform.eulerAngles.z))*speed*Time.deltaTime,
 			                                 Mathf.Sin(Deg2Rad(transform.eulerAngles.z))*speed*Time.deltaTime));
 			}
 

@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour {
 		//rigidbody2D.velocity = transform.forward*speed;
 		//new Vector2(Mathf.Cos(Deg2Rad(transform.eulerAngles.z))*speed,
 		//                                 Mathf.Sin(Deg2Rad(transform.eulerAngles.z))*speed);
-		rigidbody2D.AddForce(new Vector2(Mathf.Cos(Deg2Rad(transform.eulerAngles.z))*speed,
+		GetComponent<Rigidbody2D>().AddForce(new Vector2(Mathf.Cos(Deg2Rad(transform.eulerAngles.z))*speed,
 		                                   Mathf.Sin(Deg2Rad(transform.eulerAngles.z))*speed));
 	}
 

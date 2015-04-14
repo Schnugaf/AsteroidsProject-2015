@@ -7,6 +7,11 @@ public class SpawnScript : MonoBehaviour {
     public int spawnRate = 10;
     public GameObject[] bakterier;
     private int startCount = 0;
+    private GameObject clone;
+    private int bakterieCount;
+    public GameObject VinnScenario;
+    public GameObject[] BakterieDelete;
+    private bool CheckWin;
 	// Use this for initialization
 	void Start () {
 
@@ -16,6 +21,26 @@ public class SpawnScript : MonoBehaviour {
 	void Update () {
         startBakterie();
         bakterieSpawn();
+        bakterieCount = GameObject.FindGameObjectsWithTag("Astroid").Length;
+        //Debug.Log(bakterieCount);
+
+        if(bakterieCount > 4)
+        {
+            //Debug.Log("Sweeeeeet!");
+            CheckWin = true;
+        }
+
+        if(Input.GetKeyDown ("w"))
+        {
+            BakterieDelete = GameObject.FindGameObjectsWithTag("Astroid");
+            for (int i = 0; i < BakterieDelete.Length; i++)
+                Destroy(BakterieDelete[i]);
+        }
+        
+        if(CheckWin == true)
+        {
+            VinnFunksjon();
+        }
 	}
 
   /*  private GameObject getBakterie()
@@ -33,7 +58,18 @@ public class SpawnScript : MonoBehaviour {
     int SpawnRate()
     {
         System.Random rand = new System.Random();
-        return rand.Next(0, spawnRate);
+        return rand.Next(0, spawnRate + 1);
+    }
+
+    int SpawnTransformX()
+    {
+        System.Random rand = new System.Random();
+        return rand.Next(1, Screen.width);
+    }
+    int SpawnTransformY()
+    {
+        System.Random rand = new System.Random();
+        return rand.Next(1, Screen.height);
     }
 
     private void startBakterie()
@@ -41,7 +77,7 @@ public class SpawnScript : MonoBehaviour {
         if (startCount < 4)
         {
             startCount++;
-            GameObject clone = Instantiate(bakterier[RandomNumber()]) as GameObject;
+            GameObject clone = Instantiate(bakterier[RandomNumber()], new Vector3(SpawnTransformX(), SpawnTransformY(), 0), Quaternion.identity) as GameObject;
             antallBakterier++;
 
         }
@@ -51,10 +87,18 @@ public class SpawnScript : MonoBehaviour {
     {
         if (SpawnRate() == spawnRate && antallBakterier < totalBakterier)
         {
-            GameObject clone = Instantiate(bakterier[RandomNumber()]) as GameObject;
+            GameObject clone = Instantiate(bakterier[RandomNumber()], new Vector3(SpawnTransformX(), SpawnTransformY(), 0), Quaternion.identity) as GameObject;
             antallBakterier++;
         }
 
+    }
+
+    private void VinnFunksjon()
+    {
+        if (bakterieCount == 0)
+        {
+            GameObject clone = Instantiate(VinnScenario) as GameObject;
+        }
     }
 
 }
