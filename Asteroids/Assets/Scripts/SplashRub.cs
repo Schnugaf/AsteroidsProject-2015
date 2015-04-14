@@ -27,13 +27,10 @@ public class SplashRub : MonoBehaviour {
                     Vector3 wp = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                     Vector2 touchPos = new Vector2(wp.x, wp.y);
 
-                    if (collider2D == Physics2D.OverlapPoint(touchPos) && touch.position != touch.deltaPosition)
+                   // if (collider2D == Physics2D.OverlapPoint(touchPos) && touch.position != touch.deltaPosition)
+                    if (touch.phase == TouchPhase.Moved)
                     {
-                        SplashHealth = (SplashHealth - RubDamageRate) * Time.deltaTime;
-                        if (touch.phase == TouchPhase.Ended)
-                        {
-                            SplashHealth = 100;
-                        }
+                        SplashHealth -= (RubDamageRate * Time.deltaTime);
                         Debug.Log("Health Lost");
 
                         if (SplashHealth <= 0)

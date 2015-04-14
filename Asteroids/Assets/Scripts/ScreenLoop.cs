@@ -8,6 +8,7 @@ public class ScreenLoop : MonoBehaviour {
     private Rect rectCamLocal;
     private Vector3 camRecBottomLeft;
     private Vector3 camRecTopRight;
+    public gameObject bakterier;
 
     // Use this for initialization
     void Start()
@@ -36,24 +37,24 @@ public class ScreenLoop : MonoBehaviour {
         #region If Statements for Object Position
         //If setninger som ser etter hvilken vegg objektet treffer
 
-        if (transform.position.x > camRecTopRight.x + 10)
-        {
+        if (transform.position.x > camRecTopRight.x)
+        {   
             pos.x = camRecBottomLeft.x + 0.1f;
         }
 
 
-        if (transform.position.x < camRecBottomLeft.x - 10)
+        if (transform.position.x < camRecBottomLeft.x)
         {
             pos.x = camRecTopRight.x - 0.1f;
         }
 
-        if (transform.position.y > camRecTopRight.y + 10)
+        if (transform.position.y > camRecTopRight.y)
         {
             pos.y = camRecBottomLeft.y + 0.1f;
         }
 
 
-        if (transform.position.y < camRecBottomLeft.y - 10)
+        if (transform.position.y < camRecBottomLeft.y)
         {
             pos.y = camRecTopRight.y - 0.1f;
         }

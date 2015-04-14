@@ -6,6 +6,8 @@ public class Astroid : MonoBehaviour {
 	public float speed = 15f;
 	public float rotationSpeed = 3f;
     public Transform Splash;
+    public AudioClip squeezeSound;
+    public int endgameTest = 4;
 
 
 	// Use this for initialization
@@ -43,14 +45,19 @@ public class Astroid : MonoBehaviour {
                         }
                         else
                        */
+                        endgameTest--;
                             Destroy(this.gameObject);
                             GameObject go = (GameObject)Instantiate(Resources.Load("SplashPlaceHolder"));
+                            audio.PlayOneShot(squeezeSound);
 
                     }
                 }
             }
+            if (endgameTest == 0)
+            {
+                Application.LoadLevel("winscenario");
+            }
         }
 
 	}
-
 }
