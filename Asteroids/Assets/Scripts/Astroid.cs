@@ -6,16 +6,20 @@ public class Astroid : MonoBehaviour {
 	public float speed = 15f;
 	public float rotationSpeed = 3f;
     public Transform Splash;
-    public AudioClip squeezeSound;
     public int endgameTest = 4;
+    public GameObject splashScreen;
+    private GameObject clone;
+    //public GameObject Celle;
+    private bool hitcheck = false;
+    public float TyngdeKraft;
 
 
 	// Use this for initialization
 	void Start () {
 
-		rigidbody2D.AddTorque(rotationSpeed);
+		GetComponent<Rigidbody2D>().AddTorque(rotationSpeed);
 
-		rigidbody2D.AddForce(new Vector2(Random.Range(180.0F, -180.0F)*speed, Random.Range(180.0F, -180.0F)*speed));
+		GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(180.0F, -180.0F)*speed, Random.Range(180.0F, -180.0F)*speed));
 	}
 	
 	// Update is called once per frame
@@ -34,7 +38,7 @@ public class Astroid : MonoBehaviour {
                     Debug.Log("touch registered");
                     Vector3 wp = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
                     Vector2 touchPos = new Vector2(wp.x, wp.y);
-                    if (collider2D == Physics2D.OverlapPoint(touchPos))
+                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos) && hitcheck == false)
                     {
 
                       /*  if (transform.localScale.x == 1)
@@ -45,19 +49,30 @@ public class Astroid : MonoBehaviour {
                         }
                         else
                        */
-                        endgameTest--;
                             Destroy(this.gameObject);
-                            GameObject go = (GameObject)Instantiate(Resources.Load("SplashPlaceHolder"));
-                            audio.PlayOneShot(squeezeSound);
-
+                            GameObject clone = Instantiate(splashScreen, new Vector3(touchPos.x, touchPos.y, 10), Quaternion.identity) as GameObject;
+                            hitcheck = true;
                     }
                 }
             }
-            if (endgameTest == 0)
+            if (touch.phase == TouchPhase.Ended)
             {
-                Application.LoadLevel("winscenario");
+                hitcheck = false;
             }
         }
 
 	}
+  /*  public void FixedUpdate()
+    {
+        float magsqr;
+        Vector3 offset;
+        offset = Celle.transform.position - transform.position;
+        offset.z = 0;
+        magsqr = offset.sqrMagnitude;
+        if (magsqr > 0.0001f)
+        {
+            GetComponent<Rigidbody2D>().AddForce((TyngdeKraft * offset.normalized / magsqr));
+        }
+    }
+   */
 }

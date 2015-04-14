@@ -253,12 +253,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   antallBakterier: 0
-  totalBakterier: 10
-  spawnRate: 50
+  totalBakterier: 25
+  spawnRate: 70
   bakterier:
   - {fileID: 153102, guid: 5b7698f9ea3a4744ca4784db274f7e9b, type: 2}
   - {fileID: 167324, guid: ea9e20ba54e880b4ca3dccf563766879, type: 2}
   - {fileID: 116950, guid: cba71a0f58accc44a83c39964918cb48, type: 2}
+  - {fileID: 116950, guid: d3775d8d9c1d592499c8032c64e36e1d, type: 2}
+  - {fileID: 116950, guid: 96f3dc0c8e2fcfe47b02c5a0fba210f3, type: 2}
   VinnScenario: {fileID: 146890, guid: 9f8712cf1d1f6774cae853176d937131, type: 2}
   BakterieDelete: []
 --- !u!4 &789096871
