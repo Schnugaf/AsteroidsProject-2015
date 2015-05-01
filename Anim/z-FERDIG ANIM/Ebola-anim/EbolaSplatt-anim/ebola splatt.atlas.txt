@@ -1,0 +1,27 @@
+
+ebola splatt.png
+size: 4096,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Ebola
+  rotate: false
+  xy: 3588, 767
+  size: 410, 179
+  orig: 410, 179
+  offset: 0, 0
+  index: -1
+Splatt/Layer 2
+  rotate: false
+  xy: 1935, 108
+  size: 1651, 838
+  orig: 1651, 838
+  offset: 0, 0
+  index: -1
+Splatt/Layer 3
+  rotate: false
+  xy: 2, 2
+  size: 1931, 944
+  orig: 1931, 944
+  offset: 0, 0
+  index: -1

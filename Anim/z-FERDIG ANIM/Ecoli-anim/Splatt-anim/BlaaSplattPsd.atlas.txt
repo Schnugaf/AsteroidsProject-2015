@@ -1,0 +1,27 @@
+
+BlaaSplattPsd.png
+size: 4096,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+EColiPSD
+  rotate: false
+  xy: 2, 2
+  size: 1762, 1712
+  orig: 1762, 1712
+  offset: 0, 0
+  index: -1
+Lag 0
+  rotate: false
+  xy: 2056, 1984
+  size: 1669, 1639
+  orig: 1669, 1639
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 2, 1716
+  size: 2052, 1907
+  orig: 2052, 1907
+  offset: 0, 0
+  index: -1

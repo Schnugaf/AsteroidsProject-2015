@@ -1,0 +1,34 @@
+
+SugekoppSplatt.png
+size: 4096,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Lag 1
+  rotate: true
+  xy: 1557, 411
+  size: 1146, 863
+  orig: 1146, 863
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 2, 2
+  size: 1553, 1555
+  orig: 1553, 1555
+  offset: 0, 0
+  index: -1
+Path
+  rotate: false
+  xy: 2484, 2609
+  size: 1253, 1240
+  orig: 1253, 1240
+  offset: 0, 0
+  index: -1
+SugekoppHel
+  rotate: false
+  xy: 2, 1559
+  size: 2480, 2290
+  orig: 2480, 2290
+  offset: 0, 0
+  index: -1

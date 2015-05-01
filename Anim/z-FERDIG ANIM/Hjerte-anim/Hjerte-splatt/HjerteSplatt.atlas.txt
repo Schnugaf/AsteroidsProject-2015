@@ -1,0 +1,39 @@
+
+HjerteSplatt.png
+size: 4096,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Lag 3
+  rotate: false
+  xy: 2, 2
+  size: 2402, 2408
+  orig: 2402, 2408
+  offset: 0, 0
+  index: -1
+
+HjerteSplatt2.png
+size: 4096,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+SplattDraaper
+  rotate: false
+  xy: 2, 2
+  size: 2231, 2337
+  orig: 2231, 2337
+  offset: 0, 0
+  index: -1
+
+HjerteSplatt3.png
+size: 2048,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Splatt
+  rotate: false
+  xy: 2, 2
+  size: 1950, 2131
+  orig: 1950, 2131
+  offset: 0, 0
+  index: -1

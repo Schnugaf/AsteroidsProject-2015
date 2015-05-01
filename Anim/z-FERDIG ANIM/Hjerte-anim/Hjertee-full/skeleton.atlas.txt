@@ -1,0 +1,13 @@
+
+skeleton.png
+size: 4096,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Hjerte
+  rotate: false
+  xy: 2, 2
+  size: 2401, 2407
+  orig: 2401, 2407
+  offset: 0, 0
+  index: -1

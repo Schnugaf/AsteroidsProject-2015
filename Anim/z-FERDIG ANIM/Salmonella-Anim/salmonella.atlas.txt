@@ -1,0 +1,55 @@
+
+salmonella.png
+size: 1024,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Group
+  rotate: false
+  xy: 839, 238
+  size: 154, 266
+  orig: 154, 266
+  offset: 0, 0
+  index: -1
+Lag 2
+  rotate: false
+  xy: 2, 121
+  size: 207, 383
+  orig: 207, 383
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 2, 3
+  size: 116, 358
+  orig: 116, 358
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: false
+  xy: 656, 118
+  size: 181, 386
+  orig: 181, 386
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: true
+  xy: 362, 2
+  size: 126, 292
+  orig: 126, 292
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: false
+  xy: 410, 149
+  size: 172, 355
+  orig: 172, 355
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: false
+  xy: 211, 130
+  size: 197, 374
+  orig: 197, 374
+  offset: 0, 0
+  index: -1
