@@ -992,7 +992,7 @@ Transform:
   - {fileID: 14385445}
   - {fileID: 611267314}
   m_Father: {fileID: 1931230745}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!225 &846573176
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1004,6 +1004,67 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!1 &884961175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 884961176}
+  - 222: {fileID: 884961178}
+  - 114: {fileID: 884961177}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &884961176
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884961175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.92852378, y: 3.92852426, z: 3.92852426}
+  m_Children: []
+  m_Father: {fileID: 1931230745}
+  m_RootOrder: 2
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -4364, y: -2825}
+  m_SizeDelta: {x: 3000.00024, y: 3000.00024}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &884961177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884961175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3d436a868ab346b42986773428c51b77, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &884961178
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884961175}
 --- !u!1 &1160248714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1472,7 @@ Transform:
   m_Children:
   - {fileID: 1160248715}
   - {fileID: 1568588661}
+  - {fileID: 884961176}
   - {fileID: 846573175}
   m_Father: {fileID: 117427605}
   m_RootOrder: 0
