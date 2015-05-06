@@ -1,0 +1,27 @@
+
+Cocci-Splatt.png
+size: 4096,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+COCCI
+  rotate: true
+  xy: 2, 2
+  size: 1485, 1821
+  orig: 1485, 1821
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: false
+  xy: 1826, 1846
+  size: 1238, 2074
+  orig: 1238, 2074
+  offset: 0, 0
+  index: -1
+Layer 6
+  rotate: false
+  xy: 2, 1489
+  size: 1822, 2431
+  orig: 1822, 2431
+  offset: 0, 0
+  index: -1

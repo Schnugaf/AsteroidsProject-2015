@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Astroid : MonoBehaviour {
 
-	public float speed = 15f;
+	private float speed = 0.005f;
 	public float rotationSpeed = 3f;
     public Transform Splash;
     public int endgameTest = 4;
@@ -12,20 +12,21 @@ public class Astroid : MonoBehaviour {
     //public GameObject Celle;
     private bool hitcheck = false;
     public float TyngdeKraft;
-
+	public Transform Celle;
 
 	// Use this for initialization
 	void Start () {
 
 		GetComponent<Rigidbody2D>().AddTorque(rotationSpeed);
 
-		GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(180.0F, -180.0F)*speed, Random.Range(180.0F, -180.0F)*speed));
+
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
         int fingerCount = 0;
-
+		GetComponent<Rigidbody2D>().AddForce((Celle.position - transform.position) * speed);
 
         foreach (Touch touch in Input.touches)
         {

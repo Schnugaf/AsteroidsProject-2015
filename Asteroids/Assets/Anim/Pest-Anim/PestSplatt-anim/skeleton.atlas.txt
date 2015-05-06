@@ -1,0 +1,20 @@
+
+skeleton.png
+size: 4096,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Splatt/YP splatt
+  rotate: true
+  xy: 2, 2
+  size: 1984, 2234
+  orig: 1984, 2234
+  offset: 0, 0
+  index: -1
+YP
+  rotate: true
+  xy: 2238, 35
+  size: 1951, 1821
+  orig: 1951, 1821
+  offset: 0, 0
+  index: -1

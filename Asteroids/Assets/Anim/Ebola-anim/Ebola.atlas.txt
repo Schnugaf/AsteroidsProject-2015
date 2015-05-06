@@ -1,0 +1,13 @@
+
+Ebola.png
+size: 512,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Ebola
+  rotate: false
+  xy: 2, 2
+  size: 410, 179
+  orig: 410, 179
+  offset: 0, 0
+  index: -1

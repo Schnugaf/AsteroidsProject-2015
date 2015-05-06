@@ -12,6 +12,7 @@ public class SpawnScript : MonoBehaviour {
     public GameObject VinnScenario;
     public GameObject[] BakterieDelete;
     private bool CheckWin;
+	public Transform[] SpawnTransformArray;
 	// Use this for initialization
 	void Start () {
 
@@ -41,6 +42,7 @@ public class SpawnScript : MonoBehaviour {
         {
             VinnFunksjon();
         }
+
 	}
 
   /*  private GameObject getBakterie()
@@ -54,6 +56,12 @@ public class SpawnScript : MonoBehaviour {
         System.Random rand = new System.Random();
         return rand.Next(0, bakterier.Length);
     }
+
+	int RandomTransform()
+	{
+			System.Random rand = new System.Random ();
+			return rand.Next (0, SpawnTransformArray.Length);
+	}
     
     int SpawnRate()
     {
@@ -61,7 +69,7 @@ public class SpawnScript : MonoBehaviour {
         return rand.Next(0, spawnRate + 1);
     }
 
-    int SpawnTransformX()
+    /*int SpawnTransformX()
     {
         System.Random rand = new System.Random();
         return rand.Next(1, Screen.width);
@@ -70,24 +78,25 @@ public class SpawnScript : MonoBehaviour {
     {
         System.Random rand = new System.Random();
         return rand.Next(1, Screen.height);
-    }
+    }*/
 
     private void startBakterie()
     {
+		Transform location = SpawnTransformArray [RandomTransform ()];
         if (startCount < 4)
         {
             startCount++;
-            GameObject clone = Instantiate(bakterier[RandomNumber()], new Vector3(SpawnTransformX(), SpawnTransformY(), 0), Quaternion.identity) as GameObject;
+			GameObject clone = Instantiate(bakterier[RandomNumber()], location.position, Quaternion.identity) as GameObject;
             antallBakterier++;
 
         }
     }
 
     private void bakterieSpawn()
-    {
+	{	Transform location = SpawnTransformArray [RandomTransform ()];
         if (SpawnRate() == spawnRate && antallBakterier < totalBakterier)
         {
-            GameObject clone = Instantiate(bakterier[RandomNumber()], new Vector3(SpawnTransformX(), SpawnTransformY(), 0), Quaternion.identity) as GameObject;
+			GameObject clone = Instantiate(bakterier[RandomNumber()], location.position, Quaternion.identity) as GameObject;
             antallBakterier++;
         }
 

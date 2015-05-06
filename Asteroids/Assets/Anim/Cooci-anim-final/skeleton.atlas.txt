@@ -1,0 +1,13 @@
+
+skeleton.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+COCCI
+  rotate: false
+  xy: 2, 2
+  size: 1485, 1821
+  orig: 1485, 1821
+  offset: 0, 0
+  index: -1

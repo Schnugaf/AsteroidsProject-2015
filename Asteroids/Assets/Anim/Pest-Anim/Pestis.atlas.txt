@@ -1,0 +1,13 @@
+
+Pestis.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+YP
+  rotate: false
+  xy: 2, 2
+  size: 1951, 1821
+  orig: 1951, 1821
+  offset: 0, 0
+  index: -1

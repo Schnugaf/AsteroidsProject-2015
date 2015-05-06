@@ -1,0 +1,27 @@
+
+gronn pigg.png
+size: 4096,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Group
+  rotate: false
+  xy: 2, 1763
+  size: 1979, 2192
+  orig: 1979, 2192
+  offset: 0, 0
+  index: -1
+Lag 1
+  rotate: false
+  xy: 1983, 2131
+  size: 1781, 1824
+  orig: 1781, 1824
+  offset: 0, 0
+  index: -1
+lag2
+  rotate: true
+  xy: 2, 2
+  size: 1759, 1934
+  orig: 1759, 1934
+  offset: 0, 0
+  index: -1

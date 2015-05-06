@@ -1,0 +1,27 @@
+
+RosaSplatt.png
+size: 4096,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+draaper
+  rotate: true
+  xy: 2, 2
+  size: 1979, 1538
+  orig: 1979, 1538
+  offset: 0, 0
+  index: -1
+flekk
+  rotate: true
+  xy: 1542, 600
+  size: 1381, 1321
+  orig: 1381, 1321
+  offset: 0, 0
+  index: -1
+takler
+  rotate: true
+  xy: 2865, 507
+  size: 1474, 938
+  orig: 1474, 938
+  offset: 0, 0
+  index: -1
