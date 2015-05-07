@@ -1,7 +1,12 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: ab1ac31a48efafb4bbf8f7cd98c43c4d
 timeCreated: 1430851148
+=======
+guid: 4ddf679a420fd424688ceb4fd2dd48dd
+timeCreated: 1430879449
+>>>>>>> origin/master
 =======
 guid: 4ddf679a420fd424688ceb4fd2dd48dd
 timeCreated: 1430879449
@@ -13,7 +18,11 @@ AudioImporter:
     loadType: 0
     sampleRateSetting: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     sampleRateOverride: 0
+=======
+    sampleRateOverride: 44100
+>>>>>>> origin/master
 =======
     sampleRateOverride: 44100
 >>>>>>> origin/master

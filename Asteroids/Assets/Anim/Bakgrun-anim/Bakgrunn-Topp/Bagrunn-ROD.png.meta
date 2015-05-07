@@ -1,6 +1,10 @@
 fileFormatVersion: 2
 guid: 866e16b0ef830d549b1720083a28d3a6
+<<<<<<< HEAD:Asteroids/Assets/Anim/Bakgrun-anim/Bakgrunn-Topp/Bagrunn-ROD.png.meta
 timeCreated: 1431019605
+=======
+timeCreated: 1430879960
+>>>>>>> origin/master:Asteroids/Assets/Anim/Bakgrun-anim/Bakgrunn-Topp/Bagrunn-ROD.png.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
