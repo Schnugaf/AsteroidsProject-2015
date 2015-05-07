@@ -1,0 +1,34 @@
+
+GronnSplatt.png
+size: 4096,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+draaper
+  rotate: true
+  xy: 2130, 1582
+  size: 2362, 1238
+  orig: 2362, 1238
+  offset: 0, 0
+  index: -1
+flekk
+  rotate: false
+  xy: 2, 2
+  size: 1979, 1620
+  orig: 1979, 1620
+  offset: 0, 0
+  index: -1
+gronn pigg2
+  rotate: false
+  xy: 2, 1624
+  size: 2126, 2320
+  orig: 2126, 2320
+  offset: 0, 0
+  index: -1
+pigger
+  rotate: true
+  xy: 3370, 2499
+  size: 1445, 351
+  orig: 1445, 351
+  offset: 0, 0
+  index: -1

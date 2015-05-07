@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11406102}
   m_Layer: 0
   m_Name: VinnScenario
-  m_TagString: Untagged
+  m_TagString: Astroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,10 +65,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 146890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85b04538fef1f7343a655d42f9d4f3fa, type: 3}
+  m_Script: {fileID: 11500000, guid: df3467e9094f4ef4789815c61cca4bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snr: 2
+  SceneLevel: 4
 --- !u!212 &21208340
 SpriteRenderer:
   m_ObjectHideFlags: 1

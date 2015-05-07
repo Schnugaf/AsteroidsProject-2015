@@ -5,7 +5,7 @@ public class SplashRub : MonoBehaviour {
 
     public float SplashHealth = 100;
     public float RubDamageRate = 1;
-
+	//public Animation SplashAnim;
 	// Use this for initialization
 	void Start () {
 	
@@ -13,6 +13,7 @@ public class SplashRub : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//SplashAnim.wrapMode = WrapMode.Once;
 
 
 

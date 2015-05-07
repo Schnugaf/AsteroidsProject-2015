@@ -1,14 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SplashRub.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpawnScript.cs">
     <Files>
-      <File FileName="Assets\CellDamage.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Astroid.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Bullet.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerMove.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Astroid.cs" Line="6" Column="29" />
       <File FileName="Assets\Scripts\ScreenLoop.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpawnScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SplashRub.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpawnScript.cs" Line="105" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
