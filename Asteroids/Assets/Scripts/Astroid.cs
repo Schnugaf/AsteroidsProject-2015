@@ -2,10 +2,8 @@
 using System.Collections;
 
 public class Astroid : MonoBehaviour {
-
-	private float speed = 0.005f;
+	
 	public float rotationSpeed = 3f;
-    public Transform Splash;
     public int endgameTest = 4;
     public GameObject splashScreen;
     private GameObject clone;
@@ -13,13 +11,14 @@ public class Astroid : MonoBehaviour {
     private bool hitcheck = false;
     public float TyngdeKraft;
 	public Transform Celle;
-
+	public float speed = Random.Range (0.05f, 0.002f);
+	public int _scoreCount;
+	public static Astroid Instance;
 	// Use this for initialization
 	void Start () {
 
 		GetComponent<Rigidbody2D>().AddTorque(rotationSpeed);
-
-
+		Instance = this;
 
 	}
 	
@@ -53,6 +52,8 @@ public class Astroid : MonoBehaviour {
                             Destroy(this.gameObject);
                             GameObject clone = Instantiate(splashScreen, new Vector3(touchPos.x, touchPos.y, 10), Quaternion.identity) as GameObject;
                             hitcheck = true;
+						tenPoints ();
+							
                     }
                 }
             }
@@ -63,6 +64,14 @@ public class Astroid : MonoBehaviour {
         }
 
 	}
+
+	public int tenPoints()
+	{
+		_scoreCount = _scoreCount + 10;
+		
+		return _scoreCount;
+	}
+
   /*  public void FixedUpdate()
     {
         float magsqr;
