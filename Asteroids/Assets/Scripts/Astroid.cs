@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Astroid : MonoBehaviour {
@@ -9,11 +9,11 @@ public class Astroid : MonoBehaviour {
     private GameObject clone;
     //public GameObject Celle;
     private bool hitcheck = false;
-    public float TyngdeKraft;
 	public Transform Celle;
 	public float speed = Random.Range (0.05f, 0.002f);
 	public int _scoreCount;
 	public static Astroid Instance;
+
 	// Use this for initialization
 	void Start () {
 
@@ -50,9 +50,11 @@ public class Astroid : MonoBehaviour {
                         else
                        */
                             Destroy(this.gameObject);
+							SquishPlayer.InstanceAudio.RandomSquishPlayer();
                             GameObject clone = Instantiate(splashScreen, new Vector3(touchPos.x, touchPos.y, 10), Quaternion.identity) as GameObject;
                             hitcheck = true;
-						tenPoints ();
+							tenPoints ();
+							Debug.Log ("Score " +_scoreCount);
 							
                     }
                 }
@@ -71,6 +73,7 @@ public class Astroid : MonoBehaviour {
 		
 		return _scoreCount;
 	}
+
 
   /*  public void FixedUpdate()
     {

@@ -35,12 +35,10 @@ public class CelleHealth : MonoBehaviour {
 				if (Health == 1) {
 						GameObject clone = Instantiate (CelleAnimState [2]);
 				}
-				if (Health == 0) {
+				if (Health <= 0) {
 						GameObject clone = Instantiate (CelleAnimState [3]);
 					if(Input.GetMouseButtonDown(0))
-					{
 						Application.LoadLevel ("losescenario");
-					}
 				}
 				
 		}

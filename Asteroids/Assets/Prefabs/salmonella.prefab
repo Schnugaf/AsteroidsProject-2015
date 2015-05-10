@@ -161,7 +161,7 @@ MonoBehaviour:
   submeshSeparators: []
   timeScale: 1
   loop: 1
-  _animationName: 
+  _animationName: animation
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

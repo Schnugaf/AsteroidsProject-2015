@@ -106,7 +106,6 @@ MonoBehaviour:
   rotationSpeed: 3
   endgameTest: 4
   splashScreen: {fileID: 181640, guid: 9f652c0d011aa174e98ec469cc7f793f, type: 2}
-  TyngdeKraft: 0
   Celle: {fileID: 493302, guid: cd0d89c208e0f824aadb35d679febcb9, type: 2}
   speed: .00499999989
   _scoreCount: 0
@@ -123,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skeletonDataAsset: {fileID: 11400000, guid: e8697b102a2c6434aaceaa7202f3aaea, type: 2}
   initialSkinName: default
-  calculateNormals: 0
+  calculateNormals: 1
   calculateTangents: 0
   zSpacing: 0
   renderMeshes: 1

@@ -13,9 +13,14 @@ public class SpawnScript : MonoBehaviour {
     public GameObject[] BakterieDelete;
     private bool CheckWin;
 	public Transform[] SpawnTransformArray;
+	public int SceneTick;
+	public static SpawnScript InstantiatedTicker;
+	public bool yay;
 	// Use this for initialization
 	void Start () {
 		startBakterie ();
+		InstantiatedTicker = this;
+		yay = false;
 	}
 	
 	// Update is called once per frame
@@ -94,20 +99,22 @@ public class SpawnScript : MonoBehaviour {
     }
 
     private void bakterieSpawn()
-	{	Transform location = SpawnTransformArray [RandomTransform ()];
+	{	Transform location = SpawnTransformArray [Random.Range(0,SpawnTransformArray.Length) ];
         if (SpawnRate() == spawnRate && antallBakterier < totalBakterier)
         {
-			GameObject clone = Instantiate(bakterier[RandomNumber()], location.position, Quaternion.identity) as GameObject;
+			GameObject clone = Instantiate(bakterier[Random.Range (0, bakterier.Length)], location.position, Quaternion.identity) as GameObject;
             antallBakterier++;
         }
 
     }
 
-    private void VinnFunksjon()
+
+    public void VinnFunksjon()
     {
         if (bakterieCount == 0)
         {
-            GameObject clone = Instantiate(VinnScenario) as GameObject;
+			yay = true;
+			GameObject clone = Instantiate(VinnScenario) as GameObject;
         }
     }
 
