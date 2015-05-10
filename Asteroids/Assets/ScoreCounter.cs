@@ -9,7 +9,7 @@ public class ScoreCounter : MonoBehaviour {
 	void Start () {
 		DontDestroyOnLoad (this.gameObject);
 		InstanceScore = this;
-		addPoints = Astroid.Instance.tenPoints ();
+		addPoints = Astroid.Instance.tenPoints();
 	}
 	
 	// Update is called once per frame

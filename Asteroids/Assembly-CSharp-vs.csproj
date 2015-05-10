@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\CelleHealth.cs" />
      <Compile Include="Assets\PointsGUI.cs" />
+     <Compile Include="Assets\SceneChecker.cs" />
      <Compile Include="Assets\ScoreCounter.cs" />
      <Compile Include="Assets\Scripts\Astroid.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
@@ -60,6 +61,7 @@
      <Compile Include="Assets\Scripts\ScreenLoop.cs" />
      <Compile Include="Assets\Scripts\SpawnScript.cs" />
      <Compile Include="Assets\Scripts\SplashRub.cs" />
+     <Compile Include="Assets\Scripts\SquishPlayer.cs" />
      <Compile Include="Assets\Scripts\TestScript.cs" />
      <Compile Include="Assets\Scripts\TouchCheck.cs" />
      <Compile Include="Assets\spine-csharp\Properties\AssemblyInfo.cs" />

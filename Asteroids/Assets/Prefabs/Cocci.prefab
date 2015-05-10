@@ -128,8 +128,8 @@ MonoBehaviour:
   logErrors: 0
   submeshSeparators: []
   timeScale: 1
-  loop: 0
-  _animationName: 
+  loop: 1
+  _animationName: animation
 --- !u!114 &11447356
 MonoBehaviour:
   m_ObjectHideFlags: 1

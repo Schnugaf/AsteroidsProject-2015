@@ -5,16 +5,13 @@ public class SplashRub : MonoBehaviour {
 
     public float SplashHealth = 100;
     public float RubDamageRate = 1;
-	private Animator anim;
 	//public Animation SplashAnim;
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		anim.Play ("animation");
 
         foreach (Touch touch in Input.touches)
         {
