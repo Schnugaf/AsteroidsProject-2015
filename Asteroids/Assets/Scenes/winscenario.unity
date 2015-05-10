@@ -614,9 +614,11 @@ GameObject:
   m_Component:
   - 224: {fileID: 1564832262}
   - 222: {fileID: 1564832266}
-  - 114: {fileID: 1564832265}
   - 114: {fileID: 1564832264}
   - 114: {fileID: 1564832263}
+  - 114: {fileID: 1564832265}
+  - 114: {fileID: 1564832268}
+  - 114: {fileID: 1564832267}
   m_Layer: 5
   m_Name: Points
   m_TagString: Untagged
@@ -677,6 +679,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1564832261}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b4fb71e2a553c4db9d8dbf500377a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Score: 0
+--- !u!222 &1564832266
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564832261}
+--- !u!114 &1564832267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564832261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b4fb71e2a553c4db9d8dbf500377a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Score: 0
+--- !u!114 &1564832268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564832261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -689,18 +721,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 0123456789
---- !u!222 &1564832266
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1564832261}
 --- !u!1 &1625427681
 GameObject:
   m_ObjectHideFlags: 0

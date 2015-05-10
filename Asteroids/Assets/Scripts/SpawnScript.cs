@@ -15,7 +15,7 @@ public class SpawnScript : MonoBehaviour {
 	public Transform[] SpawnTransformArray;
 	// Use this for initialization
 	void Start () {
-
+		startBakterie ();
 	}
 	
 	// Update is called once per frame
@@ -36,6 +36,7 @@ public class SpawnScript : MonoBehaviour {
             BakterieDelete = GameObject.FindGameObjectsWithTag("Astroid");
             for (int i = 0; i < BakterieDelete.Length; i++)
                 Destroy(BakterieDelete[i]);
+			VinnFunksjon();
         }
         
         if(CheckWin == true)
