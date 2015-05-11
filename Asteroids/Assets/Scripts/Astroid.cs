@@ -51,7 +51,7 @@ public class Astroid : MonoBehaviour {
                        */
                             Destroy(this.gameObject);
 							SquishPlayer.InstanceAudio.RandomSquishPlayer();
-                            GameObject clone = Instantiate(splashScreen, new Vector3(touchPos.x, touchPos.y, 10), Quaternion.identity) as GameObject;
+                            GameObject clone = Instantiate(splashScreen, new Vector3(touchPos.x, touchPos.y, -10), Quaternion.identity) as GameObject;
                             hitcheck = true;
 							tenPoints ();
 							Debug.Log ("Score " +_scoreCount);
