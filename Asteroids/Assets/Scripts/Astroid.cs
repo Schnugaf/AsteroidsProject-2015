@@ -21,7 +21,7 @@ public class Astroid : MonoBehaviour {
 		Instance = this;
 
 	}
-	#region TouchRegistrering
+	#region TouchRegistrering, Hastighet og Instansiering
 	// Update is called once per frame
 	void Update () {
         int fingerCount = 0;
