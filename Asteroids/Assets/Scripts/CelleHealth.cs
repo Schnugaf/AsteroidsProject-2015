@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CelleHealth : MonoBehaviour {
 
-	public GameObject[] CelleAnimState;
+	public GameObject[] CelleAnimState; //Array for animasjoner
 	private GameObject clone;
 	public int Health;
 	private int LastHealth;
@@ -26,7 +26,7 @@ public class CelleHealth : MonoBehaviour {
 	{
 				yield return new WaitForSeconds (4f);
 		}
-
+	#region Sjekk health, instansier ny hjerte animasjon.
 
 	void CheckHealth (){
 				if (Health == 3) {
@@ -45,7 +45,8 @@ public class CelleHealth : MonoBehaviour {
 						Application.LoadLevel ("losescenario");
 				}
 		}
-
+	#endregion
+	#region Kolliderer med Bakterier? Ødelegg hjerte.
 	void OnTriggerEnter2D(Collider2D Astroid) 
 	{
 		Health --;
@@ -55,12 +56,13 @@ public class CelleHealth : MonoBehaviour {
 			Destroy (GameObject.FindWithTag ("Hjerte"));
 		}
 	}
+	#endregion
 
 
 	void HjerteSpawn() {
 				if (Health != LastHealth) {
 						CheckHealth ();
-						LastHealth = Health;
+						LastHealth = Health; //Sjekk helse når det er forandring i helse.
 				}
 		}
 

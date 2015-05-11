@@ -31,7 +31,7 @@ public class SceneLoader : MonoBehaviour
 
 	public void gameContinue()
 	{
-		Application.LoadLevel (PlayerPrefs.GetInt ("Level"));
+		Application.LoadLevel (PlayerPrefs.GetInt ("Level")); //Hente inn lagret int i seperat dokument for å hente opp sist spillte level.
 	}
 
 	public void StateChange()

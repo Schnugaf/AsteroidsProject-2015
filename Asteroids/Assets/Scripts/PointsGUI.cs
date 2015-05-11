@@ -8,14 +8,14 @@ public class PointsGUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		 Pointstring = GetComponent<Text> ();
+		 Pointstring = GetComponent<Text> (); //Ta tak i komponenten for tekst i objektet
 		_Score = ScoreCounter.InstanceScore.checkPoints();
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Pointstring.text = "" + _Score;
+		Pointstring.text = "" + _Score; //Skriv inn poeng sum!
 	}
 
 

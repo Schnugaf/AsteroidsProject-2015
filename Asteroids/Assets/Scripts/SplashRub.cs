@@ -12,7 +12,7 @@ public class SplashRub : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		#region Touchregistrering for kontinuerlig bevegelse
         foreach (Touch touch in Input.touches)
         {
             if (touch.phase != TouchPhase.Ended || touch.phase != TouchPhase.Canceled)
@@ -25,9 +25,9 @@ public class SplashRub : MonoBehaviour {
                     //Vector2 touchPos = new Vector2(wp.x, wp.y);
 
                    // if (collider2D == Physics2D.OverlapPoint(touchPos) && touch.position != touch.deltaPosition)
-                    if (touch.phase == TouchPhase.Moved)
+                    if (touch.phase == TouchPhase.Moved) //Fingeren må beveges slik at spilleren ikke bare kan holde fingeren på skjermen.
                     {
-                        SplashHealth -= (RubDamageRate * Time.deltaTime);
+                        SplashHealth -= (RubDamageRate * Time.deltaTime); //Livet går gradvis ned.
                         Debug.Log("Health Lost");
 
                         if (SplashHealth <= 0)
@@ -39,6 +39,7 @@ public class SplashRub : MonoBehaviour {
                 }
             }
         }
+		#endregion
 
 	}
 }

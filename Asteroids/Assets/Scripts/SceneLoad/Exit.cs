@@ -34,7 +34,7 @@ public class Exit : MonoBehaviour {
 
 	public void backToMenu()
 	{
-		PlayerPrefs.SetInt ("Level", SceneChecker.InstantiatedLevel.CurrLvl);
+		PlayerPrefs.SetInt ("Level", SceneChecker.InstantiatedLevel.CurrLvl); //Lagre nåværende level som int i seperat fil for å kunne kalles opp.
 		PlayerPrefs.Save ();
 		Application.LoadLevel (0);
 		}
