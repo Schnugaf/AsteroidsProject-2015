@@ -22,6 +22,10 @@ public class CelleHealth : MonoBehaviour {
 
 	}
 
+	IEnumerator WaitForEnd()
+	{
+				yield return new WaitForSeconds (4f);
+		}
 
 
 	void CheckHealth (){
@@ -37,10 +41,9 @@ public class CelleHealth : MonoBehaviour {
 				}
 				if (Health <= 0) {
 						GameObject clone = Instantiate (CelleAnimState [3]);
-					if(Input.GetMouseButtonDown(0))
+						StartCoroutine ("WaitForEnd");
 						Application.LoadLevel ("losescenario");
 				}
-				
 		}
 
 	void OnTriggerEnter2D(Collider2D Astroid) 

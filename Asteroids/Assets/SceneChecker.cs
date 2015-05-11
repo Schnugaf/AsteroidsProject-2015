@@ -17,11 +17,11 @@ public class SceneChecker : MonoBehaviour {
 
 	public int CurrentLevel()
 	{
-		 if (SpawnScript.InstantiatedTicker.yay == true);
-		{
+
+
 						CurrLvl = CurrLvl + 1;
 						return CurrLvl;
-				}
+
 
 	}
 }

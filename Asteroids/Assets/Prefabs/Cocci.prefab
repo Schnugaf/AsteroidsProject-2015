@@ -13,8 +13,7 @@ GameObject:
   - 114: {fileID: 11429856}
   - 50: {fileID: 5097478}
   - 114: {fileID: 11447356}
-  - 58: {fileID: 5842284}
-  - 58: {fileID: 5858204}
+  - 61: {fileID: 6159662}
   m_Layer: 0
   m_Name: Cocci
   m_TagString: Astroid
@@ -29,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.93000007, y: 0, z: 0}
   m_LocalScale: {x: .0735248923, y: .0735248923, z: .0735248923}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,8 +79,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5842284
-CircleCollider2D:
+--- !u!61 &6159662
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -90,22 +89,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 10}
+  m_Offset: {x: .0309865475, y: -3.23867798}
   serializedVersion: 2
-  m_Radius: 5
---- !u!58 &5858204
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135156}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 1}
-  serializedVersion: 2
-  m_Radius: 7
+  m_Size: {x: 14.6174259, y: 33.9230461}
 --- !u!114 &11429856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -144,7 +130,6 @@ MonoBehaviour:
   rotationSpeed: 3
   endgameTest: 4
   splashScreen: {fileID: 169296, guid: 8b6eef7b8e77b24479eadb8889f49ccc, type: 2}
-  TyngdeKraft: 0
   Celle: {fileID: 493302, guid: cd0d89c208e0f824aadb35d679febcb9, type: 2}
   speed: .00499999989
   _scoreCount: 0

@@ -16,6 +16,10 @@ public class SceneLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		if (Application.loadedLevelName == "winscenario");
+		{
+				_thisIsAState = true;
+		}
 
     }
 
@@ -25,10 +29,18 @@ public class SceneLoader : MonoBehaviour
         Debug.Log("Scene Start");
     }
 
+	public void gameContinue()
+	{
+		Application.LoadLevel (PlayerPrefs.GetInt ("Level"));
+	}
+
 	public void StateChange()
 	{
-				if (SceneLevel > 0 && _thisIsAState == true) {
+
 						Application.LoadLevel (SceneLevel);
-				}
 		}
+	public void _backToMenu()
+	{
+				Application.LoadLevel (0);
+	}
 }

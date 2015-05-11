@@ -13,9 +13,7 @@ GameObject:
   - 114: {fileID: 11469760}
   - 50: {fileID: 5089162}
   - 114: {fileID: 11447748}
-  - 58: {fileID: 5805172}
-  - 58: {fileID: 5879814}
-  - 58: {fileID: 5877012}
+  - 60: {fileID: 6027754}
   m_Layer: 0
   m_Name: salmonella
   m_TagString: Astroid
@@ -81,8 +79,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5805172
-CircleCollider2D:
+--- !u!60 &6027754
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,35 +89,17 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 3}
-  serializedVersion: 2
-  m_Radius: 1
---- !u!58 &5877012
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159088}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -1}
-  serializedVersion: 2
-  m_Radius: 1
---- !u!58 &5879814
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 159088}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 1}
-  serializedVersion: 2
-  m_Radius: 1
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -4.36172771, y: 2.61902094}
+      - {x: -.285918415, y: 4.87050438}
+      - {x: 4.47908115, y: 3.85863209}
+      - {x: 3.28097177, y: .496106654}
+      - {x: 1.2579478, y: .166834041}
+      - {x: .0287016593, y: -6.97741795}
+      - {x: -1.3408891, y: -6.53320599}
+      - {x: -1.79336989, y: -1.61997378}
 --- !u!114 &11447748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,7 +114,6 @@ MonoBehaviour:
   rotationSpeed: 3
   endgameTest: 4
   splashScreen: {fileID: 163108, guid: b4211dba92114da4399543f4a88bc1ad, type: 2}
-  TyngdeKraft: 0
   Celle: {fileID: 493302, guid: cd0d89c208e0f824aadb35d679febcb9, type: 2}
   speed: .00499999989
   _scoreCount: 0

@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+
 
 public class Exit : MonoBehaviour {
-    public int SceneLevel = 1;
+
+
 
     // Use this for initialization
     void Start()
@@ -16,9 +21,21 @@ public class Exit : MonoBehaviour {
 
     }
 
+
+
+
+
     public void gameEnd()
     {
+
         Application.Quit();
         Debug.Log("GameEnded");
     }
+
+	public void backToMenu()
+	{
+		PlayerPrefs.SetInt ("Level", SceneChecker.InstantiatedLevel.CurrLvl);
+		PlayerPrefs.Save ();
+		Application.LoadLevel (0);
+		}
 }

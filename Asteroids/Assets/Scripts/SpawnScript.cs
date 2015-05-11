@@ -114,7 +114,7 @@ public class SpawnScript : MonoBehaviour {
         if (bakterieCount == 0)
         {
 			yay = true;
-			GameObject clone = Instantiate(VinnScenario) as GameObject;
+			Application.LoadLevel (4);
         }
     }
 
