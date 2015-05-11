@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.44000006, y: 0, z: 0}
+  m_LocalPosition: {x: -4.9000001, y: 0, z: 0}
   m_LocalScale: {x: .060496971, y: .060496971, z: .060496971}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,7 +91,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 1, y: -1}
   serializedVersion: 2
-  m_Radius: 11.1212626
+  m_Radius: 16.3806343
 --- !u!114 &11400772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,7 +130,6 @@ MonoBehaviour:
   rotationSpeed: 13
   endgameTest: 4
   splashScreen: {fileID: 181754, guid: eb798778e0a0e874897cf2eef28b2487, type: 2}
-  TyngdeKraft: 0
   Celle: {fileID: 493302, guid: cd0d89c208e0f824aadb35d679febcb9, type: 2}
   speed: .00499999989
   _scoreCount: 0

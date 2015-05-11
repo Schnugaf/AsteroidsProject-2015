@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class SpawnScript : MonoBehaviour {
+	#region Mange Variabler
     public int antallBakterier = 0;
     public int totalBakterier = 10;
     public int spawnRate = 10;
@@ -16,6 +17,7 @@ public class SpawnScript : MonoBehaviour {
 	public int SceneTick;
 	public static SpawnScript InstantiatedTicker;
 	public bool yay;
+	#endregion
 	// Use this for initialization
 	void Start () {
 		startBakterie ();
@@ -24,6 +26,7 @@ public class SpawnScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+	#region Initialisering og Kontinuerlig oppdatering av objektinnhold i scene
 	void Update () {
         startBakterie();
         bakterieSpawn();
@@ -36,7 +39,7 @@ public class SpawnScript : MonoBehaviour {
             CheckWin = true;
         }
 
-        if(Input.GetKeyDown ("w"))
+        if(Input.GetKeyDown ("w")) //Debug funksjon for scenestate forandringer.
         {
             BakterieDelete = GameObject.FindGameObjectsWithTag("Astroid");
             for (int i = 0; i < BakterieDelete.Length; i++)
@@ -50,13 +53,13 @@ public class SpawnScript : MonoBehaviour {
         }
 
 	}
-
+	#endregion
   /*  private GameObject getBakterie()
     {
         return bakterier[Random.Range(0, bakterier.Length - 1)];
     }
    */
-
+	#region Ranomisering
     int RandomNumber()
     {
         System.Random rand = new System.Random();
@@ -74,6 +77,7 @@ public class SpawnScript : MonoBehaviour {
         System.Random rand = new System.Random();
         return rand.Next(0, spawnRate + 1);
     }
+	#endregion
 
     /*int SpawnTransformX()
     {
@@ -85,7 +89,7 @@ public class SpawnScript : MonoBehaviour {
         System.Random rand = new System.Random();
         return rand.Next(1, Screen.height);
     }*/
-
+	#region BakterieSpawning
     private void startBakterie()
     {
 		Transform location = SpawnTransformArray [RandomTransform ()];
@@ -107,6 +111,7 @@ public class SpawnScript : MonoBehaviour {
         }
 
     }
+	#endregion
 
 
     public void VinnFunksjon()
@@ -114,7 +119,7 @@ public class SpawnScript : MonoBehaviour {
         if (bakterieCount == 0)
         {
 			yay = true;
-			GameObject clone = Instantiate(VinnScenario) as GameObject;
+			Application.LoadLevel (4);
         }
     }
 

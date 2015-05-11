@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class Astroid : MonoBehaviour {
-	
+	#region Variabler
 	public float rotationSpeed = 3f;
     public int endgameTest = 4;
     public GameObject splashScreen;
@@ -13,7 +13,7 @@ public class Astroid : MonoBehaviour {
 	public float speed = Random.Range (0.05f, 0.002f);
 	public int _scoreCount;
 	public static Astroid Instance;
-
+	#endregion
 	// Use this for initialization
 	void Start () {
 
@@ -21,7 +21,7 @@ public class Astroid : MonoBehaviour {
 		Instance = this;
 
 	}
-	
+	#region TouchRegistrering
 	// Update is called once per frame
 	void Update () {
         int fingerCount = 0;
@@ -51,7 +51,7 @@ public class Astroid : MonoBehaviour {
                        */
                             Destroy(this.gameObject);
 							SquishPlayer.InstanceAudio.RandomSquishPlayer();
-                            GameObject clone = Instantiate(splashScreen, new Vector3(touchPos.x, touchPos.y, 10), Quaternion.identity) as GameObject;
+                            GameObject clone = Instantiate(splashScreen, new Vector3(touchPos.x, touchPos.y, -10), Quaternion.identity) as GameObject;
                             hitcheck = true;
 							tenPoints ();
 							Debug.Log ("Score " +_scoreCount);
@@ -66,6 +66,7 @@ public class Astroid : MonoBehaviour {
         }
 
 	}
+	#endregion
 
 	public int tenPoints()
 	{

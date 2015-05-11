@@ -106,7 +106,6 @@ MonoBehaviour:
   rotationSpeed: 3
   endgameTest: 4
   splashScreen: {fileID: 127562, guid: bf7158137abb278448755499ea363a91, type: 2}
-  TyngdeKraft: 0
   Celle: {fileID: 493302, guid: cd0d89c208e0f824aadb35d679febcb9, type: 2}
   speed: .00499999989
   _scoreCount: 0
