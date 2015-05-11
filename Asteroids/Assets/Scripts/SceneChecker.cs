@@ -12,16 +12,14 @@ public class SceneChecker : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+				
 	
 	}
 
 	public int CurrentLevel()
 	{
 
-
-						CurrLvl = CurrLvl + 1;
-						return CurrLvl;
-
-
+		
+		return CurrLvl;
 	}
 }

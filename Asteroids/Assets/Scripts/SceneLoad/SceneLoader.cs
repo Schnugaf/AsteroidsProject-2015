@@ -36,8 +36,12 @@ public class SceneLoader : MonoBehaviour
 
 	public void StateChange()
 	{
-
-						Application.LoadLevel (SceneLevel);
+		if (SceneLevel != 3) {
+						Application.LoadLevel (SceneLevel + 1);
+				}
+		if (SceneLevel == 3) {
+			Application.LoadLevel (0);
+				}
 		}
 	public void _backToMenu()
 	{
